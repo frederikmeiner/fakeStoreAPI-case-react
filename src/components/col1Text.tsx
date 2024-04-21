@@ -1,4 +1,3 @@
-// src/components/Col1Text.tsx
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -41,7 +40,7 @@ const MotionText: React.FC<MotionTextProps> = ({ text }) => (
 
 export default function Col1Text() {
     const text = "Wecome to our Fake store API!";
-    const subText = "In this project, React, Vite, TypeScript, React Router 6.4, and Framer Motion were utilized to create a modern, interactive web experience. Data was fetched from the Fake Store API (https://fakestoreapi.com).";
+    const subText = "In this project, React, Vite, TypeScript, Tailwind, React Router 6.4, and Framer Motion were utilized to create a modern, interactive web experience. Data was fetched from the Fake Store API (https://fakestoreapi.com).";
 
     return (
         <section className="bg-custom-brown [margin-top:60.5px] text-white  pt-32 pb-32">

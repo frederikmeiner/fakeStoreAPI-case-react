@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { firstLetter } from '../helperFunction';
 
@@ -22,7 +22,7 @@ export default function RelatedProduct({ currentCategory }: RelatedProductProps)
       try {
         const response = await fetch('https://fakestoreapi.com/products');
         const data: Product[] = await response.json();
-        // Filter by category and limit to 4 products
+        // Filter by the category and limit to 4 products
         const filteredProducts = data.filter(product => product.category === currentCategory).slice(0, 4);
         setProducts(filteredProducts);
       } catch (error) {
@@ -31,7 +31,7 @@ export default function RelatedProduct({ currentCategory }: RelatedProductProps)
     }
 
     fetchProducts();
-  }, [currentCategory]); // Dependency on currentCategory ensures re-fetching when category changes
+  }, [currentCategory]); // when category changes
 
   return (
     <section className="pt-16 pb-16 mb-16 bg-[#EFEFF0]">

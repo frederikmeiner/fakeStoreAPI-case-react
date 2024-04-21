@@ -8,14 +8,12 @@ export function firstLetter(word: string): string {
 const sizes: string[] = ["Small", "Medium", "Large"];
 
 
-interface SizeSelectorProps {}
-
-export const SizeSelector: React.FC<SizeSelectorProps> = () => {
+export const SizeSelector: React.FC = () => {
   const [size, setSize] = useState<string>('');
 
   const handleSizeChange = (event: ChangeEvent<HTMLSelectElement>): void => {
     const newSize = event.target.value;
-    setSize(newSize); // Update the state to the new size
+    setSize(newSize); // Update the state
   };
 
   return (

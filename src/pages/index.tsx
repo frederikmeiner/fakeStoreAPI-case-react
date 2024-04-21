@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { firstLetter } from '../helperFunction';
 import Col1Text from '../components/col1Text';
@@ -30,9 +30,8 @@ function ProductList() {
   }, []);
 
   return (
-    <div>
-      
-     <Col1Text />
+<div>
+<Col1Text />
 <section className='max-w-1366 mx-auto px-10 pt-32 pb-16'>
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
     {products.map(product => (

@@ -1,4 +1,3 @@
-// src/main.tsx or wherever you set up your router
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';

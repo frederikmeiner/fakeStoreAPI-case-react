@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function Contact() {
   return (
     <section className="max-w-1366 mx-auto px-10 pt-16 pb-16">
