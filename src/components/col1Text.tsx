@@ -43,7 +43,7 @@ export default function Col1Text() {
     const subText = "In this project, React, Vite, TypeScript, Tailwind, React Router 6.4, and Framer Motion were utilized to create a modern, interactive web experience. Data was fetched from the Fake Store API (https://fakestoreapi.com).";
 
     return (
-        <section className="bg-custom-brown [margin-top:60.5px] text-white  pt-32 pb-32">
+        <section className="bg-custom-brown mt-[60.5px] lg:mt-[68px] text-white pt-32 pb-32">
             <div className="max-w-1366 mx-auto px-10">
                 <h1 className="text-xl md:text-2xl">
                     <MotionText text={text} />
