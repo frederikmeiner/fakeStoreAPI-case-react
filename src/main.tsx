@@ -8,6 +8,7 @@ import App from './App';
 import SingleProduct from './pages/singleProduct';
 import About from './pages/about';
 import Contact from './pages/contact';
+import Page404 from './pages/page404'; 
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: '/products',
     element: <Navigate to="/" replace />,
+  },
+  {
+    path: '*', 
+    element: <Layout><Page404 /></Layout>
   }
 ]);
 

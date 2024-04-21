@@ -23,11 +23,16 @@ function SingleProduct() {
       .catch(err => console.error("Failed to fetch product:", err));
   }, [id]);
 
-  if (!product) return <p>Loading product details...</p>;
+  if (!product) return <p className='max-w-1366 mx-auto flex flex-col md:flex-row px-10 pt-32 pb-16'>Loading product details...</p>;
 
   return (
     <>
-    <section className="max-w-1366 mx-auto flex flex-col md:flex-row px-10 pt-16 pb-16">
+    <div className="max-w-1366 mx-auto pt-20 px-10 flex gap-2">
+    <a className="font-semibold"href="/">Home</a>
+        <p>/</p>
+        <p className=''>{product.title}</p>
+      </div>
+    <section className="max-w-1366 mx-auto flex flex-col md:flex-row px-10 pt-32 pb-16">
       <div className="w-full md:w-1/2">
         <div className="relative h-auto overflow-hidden max-h-[400px] md:max-h-[700px] shadow-md">
           <img src={product.image} alt={product.title} className="object-cover w-full h-full"/>

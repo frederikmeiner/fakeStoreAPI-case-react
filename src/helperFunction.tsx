@@ -7,7 +7,7 @@ export function firstLetter(word: string): string {
 
 const sizes: string[] = ["Small", "Medium", "Large"];
 
-// Since onSizeSelected is not used, we remove it from the interface
+
 interface SizeSelectorProps {}
 
 export const SizeSelector: React.FC<SizeSelectorProps> = () => {
@@ -31,3 +31,4 @@ export const SizeSelector: React.FC<SizeSelectorProps> = () => {
     </select>
   );
 }
+
